@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 public class MyDemoLoggingAspect {
 	// this is where we will add all of our related advices for logging
 	
-	//start with @Before advice
+	//start with @Before advice with pointcut expression
 	@Before("execution(public void addAccount())")
 	public void beforeAddAccountAdvice()	{
 		System.out.println("\n=====>>> Executing @Before advice on addAccount()");
