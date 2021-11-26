@@ -40,6 +40,7 @@ public class MainDemoApp {
 		
 		// call the membership business method
 		theMembershipDAO.addAccount();
+		theMembershipDAO.goToSleep();
 		
 		//close context
 		context.close();
