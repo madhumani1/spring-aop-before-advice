@@ -18,7 +18,7 @@ public class MyDemoLoggingAspect {
 	// this is where we will add all of our related advices for logging
 	
 	//start with @Before advice with pointcut expression
-	@Before("execution(public void addAccount())")
+	@Before("execution(public void com.madhu.aopdemo.dao.AccountDAO.addAccount())")
 	public void beforeAddAccountAdvice()	{
 		System.out.println("\n=====>>> Executing @Before advice on addAccount()");
 	}
