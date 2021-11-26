@@ -25,6 +25,12 @@ public class MainDemoApp {
 				context.getBean("membershipDAO", MembershipDAO.class);
 		
 		// call business method
+		Account account = new Account();
+		account.setLevel("pro");
+		account.setName("Maddy");
+		System.out.println("addAccount with argument");
+		theAccountDAO.addAccount(account, true);
+		System.out.println("addAccount withOUT argument");
 		theAccountDAO.addAccount();
 		theAccountDAO.addMember();
 		
