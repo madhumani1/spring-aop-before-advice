@@ -34,6 +34,12 @@ public class MainDemoApp {
 		theAccountDAO.addAccount();
 		theAccountDAO.addMember();
 		
+		// call accountDAO getter/setter
+		theAccountDAO.setName("Toyota");
+		theAccountDAO.setServiceCode("Camry");
+		
+		String name = theAccountDAO.getName() + theAccountDAO.getServiceCode(); 
+		
 		//call business method again
 		//System.out.println("\nlet's call the method again");
 		//theAccountDAO.addAccount();
