@@ -26,6 +26,7 @@ public class MainDemoApp {
 		
 		// call business method
 		theAccountDAO.addAccount();
+		theAccountDAO.addMember();
 		
 		//call business method again
 		//System.out.println("\nlet's call the method again");
